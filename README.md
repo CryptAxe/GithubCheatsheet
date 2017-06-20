@@ -9,6 +9,15 @@ git checkout -b upstream FETCH_HEAD
 git push -u origin upstream
 ```
 
+Copy a branch from upstream repository into my fork:
+----------------------------------------------------
+```
+git remote add upstream https://github.com/drivechain-project/bitcoin
+git fetch upstream
+git checkout -b newBranch upstream/mainchainTravis
+git push -u origin newBranch
+```
+
 Updating a branch in my repository, from an upstream repository:
 --------------------------------------------------------------
 ```
